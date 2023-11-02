@@ -1,0 +1,211 @@
+body {
+    background-image: url(https://somesec.net/index/img/topography.svg);
+    color: white;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .ascii {
+    text-align: center;
+  }
+  
+  .snabela {
+    color: black;
+  }
+  
+  .other {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);;
+  }
+  
+.names {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);;
+  font-size: 22px; 
+  z-index: 1;
+}
+  
+  #fullscreen-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+    cursor: pointer;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 15%;
+    z-index: 10;
+    background: url('../img/grain.png');
+    pointer-events: none;
+  }
+  
+  .window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 264px;
+    height: 118px;
+    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    padding: 0;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  
+  .window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    padding: 2px 3px 3px;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .window-title {
+    margin: 0;
+  }
+  
+  .window-close {
+    background-color: #ffffff;
+    text-align: center;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    width: 15px;
+    height: 10px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 1px;
+    right: 4px;
+  }
+  
+  .window-close:active {
+    box-shadow: 0.5px 0.5px 0 0.5px white, inset 1px 1px black, inset -1px -1px #c2c6ca, inset 2px 2px #85898d;
+    transform: translateX(1px) translateY(1px);
+  }
+  
+  .window-content {
+    font-family: "Microsoft Sans Serif", sans-serif;
+    top: 20px;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .window-content p {
+    display: block;
+    margin: 20px 0;
+  }
+
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+  
+pre {
+    justify-self: center;
+    -webkit-animation: fadein 2s;
+    font-weight: bold;
+    user-select: none;
+    color: rgb(58, 10, 10);
+    background: repeating-linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(117, 117, 117) 40%, rgb(255, 255, 255) 60%);
+    background-size: 60vw 60vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 5s linear infinite forwards;
+   }
+   
+   @keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 60vw;
+    }
+   }
+   
+   pre2 {
+    font-weight: bold;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    background: repeating-linear-gradient(120deg, rgb(12, 0, 116) 0%, rgb(65, 125, 255) 40%, rgb(0, 38, 255)60%);
+    background-size: 60vw 60vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide2 5s linear infinite forwards;
+   }
+   
+   @keyframes slide2 {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 60vw;
+    }
+   }
+#discord {
+  float: right;
+  position: absolute;
+  right: 10;
+  display: flex;
+  justify-content: flex-end;
+  justify-self: right;
+}
+
+#dbin {
+  position: absolute;
+  left: 5;
+  float: left;
+  justify-self: left;
+}
